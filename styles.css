@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.left {
+    position: fixed;
+    float: left;
+    z-index: 1;
+}
+
+.right {
+    position: absolute;
+    right: 16px;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 950px) {
+    .left {
+        position: inherit;
+        display: inline-block;
+    }
+    .right {
+        position: inherit;
+        display: inline-block;
+    }
+    #title {
+        white-space: nowrap;
+        margin-top: 60px;
+    }
+}
